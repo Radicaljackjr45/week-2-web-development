@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel= "stylesheet" type="text/css" href="project%202%20css.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+ <h1 style="margin: auto;">NZ NEWS </h1>
+ <img src=https://static.thenounproject.com/png/23177-200.png 
+ alt="" id="logo">
+</div>
+
+<div class="topnav">
+  <a href="#">Home</a>
+  <a href="#">About us</a>
+  <a href="#">Contact</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <text-align: center><h2>Robotic police dogs: In Hawaii police use Spot from Boston Dynamics
+    </h2>
+    <img src=data:image/jpeg;base64,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 
+    hieght=400
+    width=300>
+    <br>
+    <br>
+    
+    <p class="p">If you're homeless and looking for temporary shelter in Hawaii's capital, expect a visit from a robotic police dog that will scan your eye to make sure you don't have a fever.
+         That's just one of the ways public safety agencies are starting to use Spot, the best-known of a new commercial category of robots that trot around with animal-like agility.
+         The handful of police officials experimenting with the four-legged machines say they're just another tool, like existing drones and simple wheeled robots, to keep emergency responders out of harm's way as they scout for dangers. But privacy watchdogs — the human kind — warn that police are secretly rushing to buy the robots without setting safeguards against aggressive, invasive or dehumanising uses.
+        In Honolulu, the police department spent about $150,000 in federal pandemic relief money to buy their Spot from robotics firm Boston Dynamics for use at a government-run tent city near the airport.</p>
+        
+     <h2>Tech expected to streamline weed eradication in waters</h2>
+      <img src=https://cpb-ap-se2.wpmucdn.com/blogs.auckland.ac.nz/dist/f/688/files/2021/03/dtis-1200x628-1.jpg
+    hieght=400
+    width=300>
+    <br>
+    <br>
+    <p class="p">Developing technology could be a game-changer for eradicating invasive species from New Zealand waters, and one environmental advocate can see its use in a multimillion-dollar Fiordland project.
+        Land Information New Zealand chief executive Gaye Searancke told the Environmental Defence Society conference in Christchurch this week new equipment, even dams, were having an impact on the land.
+        She also highlighted the rapid changes in the land.
+         Among those was the drastic decrease of size in the Southern Alps glaciers; a recent glacier inventory suggested ice coverage had reduced by 31% since 1978.
+        She also highlighted how the Clyde Dam in Central Otago had changed its surrounding environment since construction started in the 1980s.
+        "You can see how dramatically the dam has impacted on the river valley," she said.
+         </p>
+    <h2>Sport climbing's Adam Ondra screams his way to top in Tokyo</h2>
+      <img src=https://resources.stuff.co.nz/content/dam/images/4/y/u/2/k/1/image.related.StuffLandscapeSixteenByNine.620x350.4yu2k3.png/1628077539779.jpg?format=pjpg&optimize=medium
+    hieght=400
+    width=300> 
+    <br>
+    <br> 
+    <p class="p">Weightlifters are among the most vocal athletes at the Olympics, letting out screams as they lock out at the top of a lift: “ahhhhhh!”
+    Tennis players have long been known to be grunters, usually with some form of “ha-uh!” or “ha-ooah!”
+    The loudest vocalisations of the Tokyo Games may come from the grounds in one of the Olympic program's newest sports.
+    
+    </p>
+    <h2>Rally NZ still in the mix for WRC 2022</h2>
+    <img src=https://www.rnz.co.nz/assets/news/271308/four_col_seb.jpg?1628106840
+    hieght=400
+    width=300> 
+    <br>
+    <br>
+    <p class="p">The New Zealand Rally was last on the WRC calendar in 2012.
+         It was scheduled to return in 2020 before Covid-19 hit.
+        Croatia, Finland, Arctic Rally Finland and Belgium are all events featured on this year's calendar that are at this stage absent from the 2022 schedule.
+        FIA rally director Yves Matton confirmed to Autosport.com that there are six proposals tabled to fill the remaining berths on the 2022 calendar.</p>
+
+<H2>Coronavirus: Travel bubble with Australia unlikely to reopen</H2>
+<img src=data:image/jpeg;base64,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
+    hieght=400
+    width=300>
+    <BR>
+      <br>
+      <p class="p">Australia's inability to get its COVID-19 outbreaks under control means the travel bubble might not be open again until both our countries have widespread immunity, an expert says.
+ Shaun Hendy, a disease modelling expert at the University of Auckland says that's likely to be "much later this year" - but Aussie experts think even that might be too optimistic.</P>
+<h2>Covid-19: Travel corridor for Pacific workers to free up 300 MIQ spots per month</h2>
+    <img src=https://static.toiimg.com/thumb/msid-80668438,width-748,height-499,resizemode=4,imgsize-102818/.jpg
+    hieght=400
+    width=300>
+    <BR>
+    <br>  
+    <p class="p">Three hundred spaces in managed isolation and quarantine (MIQ) facilities will be freed up each month when the one-way travel bubble for recognised seasonal workers from the Pacific gets under way in September.
+        Prime Minister Jacinda Ardern announced on Monday that Cabinet had agreed in principle for seasonal workers from Tonga, Samoa and Vanuatu to travel to New Zealand without undergoing a two-week stay in MIQ</p>
+
+</div>
+
+
+  
+  <div class="column">
+    <h2>Government to accept Isis associate Suhayra Aden and two children from the middle east</h2>
+    <img src=https://www.aljazeera.com/wp-content/uploads/2021/07/2019-04-12T125355Z_1625882969_RC1A276FEF70_RTRMADP_3_SYRIA-ISLAMIC-STATE-WOMEN.jpg?resize=1200%2C630
+    hieght=400
+    width=300>
+    <BR>
+    <br>  
+    <p class="p">The Government has agreed with Turkey to accept the return of a woman who joined Isis, and her two children.
+      Prime Minister Jacinda Ardern on Monday afternoon said Cabinet had agreed to a “managed return” of the woman – 26-year-old Suhayra Aden – and her two children, after Turkey requested they be repatriated.
+       Aden, who is a New Zealand citizen, was detained by Turkish authorities near the border of Syria in February. Her possible return to New Zealand caused a major stir in the trans-Tasman relationship, after Ardern revealed Aden was a dual national but Australia had cancelled her citizenship.
+       Her lawyer, Deborah Manning​, said Aden was “looking forward to being in New Zealand and giving her children an opportunity at living here and integrating, and really wishes to have privacy for them to allow them to settle in here and come to terms with everything they have been through”.</p>
+  
+       <h2>Iran’s Drones Are Transforming The Middle East: Book Excerpt</h2>
+       <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPzkWe17R0eB-6q6PHMK-XAcXSIAjF_ejuwA&usqp=CAU
+       hieght=400
+       width=300>
+       <BR>
+       <br>  
+       <p class="p">In the drone wars, propaganda can be as important as actual advances. Everyone building drones seems to copy one another. For instance, Iran’s Saegeh was a copy of the Sentinel. Iran’s Shahed S-171 jet-powered Simorgh is also a copy of the US Sentinel drone, first deployed by Tehran in 2014. Amir Ali Hajizadeh, commander of the aerospace force of the IRGC, pushed to arm the Saegeh with up to four missiles.
+          The battle for the skies in the wake of Iran’s downing of the Sentinel in 2011 moved from a world that had one drone superpower to multiple drone makers. This fundamentally changed the equation and the threats that drones could pose. Iran’s goal was to create an independent drone army, much as Israel had done in the 1980s, providing Tehran with the impunity Washington had previously enjoyed. Under Hajizadeh’s guidance, Iran would bring down not only the stealth Sentinel but also the US Global Hawk in 2019, and Iran would send drones to Yemen. The world was entering a drone war revolution of rapid change in just several years.
+        
+        </p>
+        <h2>WANT TO START AN ELECTRICIAN BUSSINESS? HERE’S HOW.</h2>
+       <img src=https://cdn.vox-cdn.com/thumbor/1ZPuV80n_PVUARYlkcCorFG_Frk=/0x0:3000x3000/1200x800/filters:focal(1260x1260:1740x1740)/cdn.vox-cdn.com/uploads/chorus_image/image/50911339/electricity.0.jpg
+       hieght=400
+       width=300>
+       <BR>
+       <br>  
+       <p class="p">Many people often think of starting a business that offers electrician services but when they are not sure how to go about it, they find it very daunting and give up the idea completely. Just like in any other type of business, when you know the basics needed, you can achieve success easily.
+        When you enter a business without planning, then you will end up mismanaging it and eventually will face a loss. Not only will you end up with a lot of financial loss but can also face legal problems.
+        The same goes for when you want to start an Electrician business. Below are steps you can follow to ensure that your business is a thriving one.
+         Get The Right Qualification
+        If you yourself are not qualified and at the same time do not have qualified hired staff, then starting and managing an electrician business is going to be very difficult. To make sure that you can provide safe and reliable services, the first thing you need to understand is ‘what is a journeyman electrician?’ and how can you become one.
+         This type of electrician is officially qualified and trained to handle different types of problems related to their industry. You get an official license to work, which can open many doors for your business, as corporates can hire you for your expertise. You receive formal training that allows you to enhance specific skills.
+         As your business will grow, you can hire more electricians who have graduated from similar vocational institutions.
+          Obtain Right Licenses
+        Once you have your training and license in your hand, the next step to start a business is by obtaining the necessary license for the same. In many states, electricians must have a license to be able to work. You will need to present your license to get legal permission to start your business. 
+        When you go through a legal network, you are less prone to risks of fraud and can enjoy a safe and thriving business environment. The same goes for getting insurance.
+        
+        </p>
+        <h2>New Zealand company liquidations spike again as firms default on their debt - Centrix</h2>
+        <img src=https://www.nzherald.co.nz/resizer/rTr0ukWLSM9Zm_DDtvB5NymTKfo=/1440x810/smart/filters:quality(70)/cloudfront-ap-southeast-2.images.arcpublishing.com/nzme/XSHSPCSUKOPNMC3MZQRVOAZGRI.jpg
+        hieght=400
+        width=300>
+        <BR>
+        <br>  
+        <p class="p">New data shows a sharp increase in company closures in the three months to June as credit defaults rose 6 per cent, although the general business environment remains positive.
+
+          The latest data released by the New Zealand credit bureau Centrix revealed company liquidations were up 8 per cent between April and June in New Zealand.
+          
+          The increased closures appear to have been voluntary, Centrix said, with Companies Office data showing liquidations having fallen by 33 per cent over the past year.
+          Centrix group managing director Keith McLaughlin said while the reason for each closure would be unique to the individual circumstances. It was no coincidence that over the same period business credit defaults increased by 6 per cent.
+
+          McLaughlin said in the past 12 months the default has risen quite dramatically and he expects the trend to continue over the coming months.
+          
+          "Over the June quarter to 1700, with the average default at about $4000," he said. 
+         </p>
+         
+         <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div id="socialmedia">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          
+          </div>
+        
+
+        </div>
+  
+  
+  <div class="column">
+    <h2>Advertising</h2>
+    <img src=http://looserounds.com/wp-content/uploads/2017/02/Springfield-wood-furniture.jpg
+    hieght=400
+    width=300>
+   <br>
+   <br>
+   <br>
+   <br>
+    <img src=https://pbs.twimg.com/media/DQceZYeUQAECR3o.jpg
+    hieght=400
+    width=300>
+    <br>
+   <br>
+   <br>
+   <br>
+    <img src=https://media.pitchfork.com/photos/59359c4231bcdd124292b813/master/pass/file
+    hieght=400
+    width=300>
+ 
+
+</body>
+</html>
